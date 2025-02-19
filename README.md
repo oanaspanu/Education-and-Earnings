@@ -28,6 +28,7 @@ The dataset was cleaned to ensure there were no missing values. Descriptive stat
 ### c) Regression Models:
 Two regression models were developed:
 - **Model 1:** Includes the dummy variable for EU membership.
+
  \( GDP\_per\_Capita = \beta_0 + \beta_1 Employment\_Rate + \beta_2 Average\_Net\_Earnings + \beta_3 Average\_Years\_Schooling + \beta_4 Inflation\_Rate + \beta_5 EU\_Member + \epsilon \)
 
 - **Model 2:** Excludes the dummy variable for EU membership.
