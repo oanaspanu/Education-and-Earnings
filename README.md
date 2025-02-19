@@ -1,6 +1,5 @@
 # Education-and-Earnings
 
----
 
 ## Overview
 This econometrics project investigates the relationship between GDP per capita and various economic factors using linear regression models. The primary objective of this analysis is to estimate how certain predictors (including employment rate, net earnings, schooling years, inflation rate, and EU membership) affect the GDP per capita. We estimate two models: one with a dummy variable for EU membership and one without it. We then validate the results and conduct tests for the assumptions of the linear regression model.
@@ -10,6 +9,7 @@ This econometrics project investigates the relationship between GDP per capita a
 2. **dataset.xlsx** The Excel file with the raw data used in the analysis.
 
 ---
+
 
 ## Methodology:
 The dataset contains economic data for 30 observations.
@@ -28,13 +28,10 @@ The dataset was cleaned to ensure there were no missing values. Descriptive stat
 ### c) Regression Models:
 Two regression models were developed:
 - **Model 1:** Includes the dummy variable for EU membership.
-
- \( GDP\_per\_Capita = \beta_0 + \beta_1 Employment\_Rate + \beta_2 Average\_Net\_Earnings + \beta_3 Average\_Years\_Schooling + \beta_4 Inflation\_Rate + \beta_5 EU\_Member + \epsilon \)
-
 - **Model 2:** Excludes the dummy variable for EU membership.
-\( GDP\_per\_Capita = \beta_0 + \beta_1 Employment\_Rate + \beta_2 Average\_Net\_Earnings + \beta_3 Average\_Years\_Schooling + \beta_4 Inflation\_Rate + \epsilon \)
-   
+
 ---
+
 
 ## Calculations in the Excel Dataset:
 The Excel file contains the raw data, and the following calculations were performed:
@@ -49,6 +46,7 @@ The Excel file contains the raw data, and the following calculations were perfor
 
 ---
 
+
 ## Regression Analysis in R:
 The R script performs the following:
 1. **Model Estimation:**
@@ -61,6 +59,7 @@ The R script performs the following:
    - **Normality of Residuals (Shapiro-Wilk Test):** Tests if the residuals follow a normal distribution.
 
 ---
+
 
 ## Results:
 - **Model 1** (with the dummy variable for EU membership) suggests that the EU membership variable does not significantly affect GDP per capita, with a high p-value (0.584). Other predictors such as **Average Annual Net Earnings** and **Inflation Rate** show stronger relationships with GDP.
